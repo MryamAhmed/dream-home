@@ -19,8 +19,7 @@ class PocketBaseInstance {
         initial: prefs.getString('pb_auth'),
       );
 
-      _pocketBase =
-          PocketBase('https://dream-home.pockethost.io', authStore: store);
+      _pocketBase = PocketBase('http://127.0.0.1:8090', authStore: store);
     }
     return _pocketBase!;
   }
